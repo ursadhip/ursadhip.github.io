@@ -156,7 +156,7 @@ author_profile: true
   {% for post in sorted_phages %}
     {% assign filter_class = post.host_group %}
     
-    <div class="phage-card filter-item {{ post.category }}">
+    <div class="phage-card filter-item {{ post.category | slugify }}">
       <div class="image-container">
         <a href="{{ post.url | relative_url }}">
           <img src="/images/{{ post.header.teaser | split: '/' | last }}" alt="{{ post.title }}">
