@@ -6,7 +6,7 @@ excerpt: "*Staphyloccus aureus* — Myovirus"
 collection: portfolio
 header:
   teaser: "/images/SA-17-8-0007.png"
-order_number: 2
+order_number: 10
 host_group: "S"
 ---
 
