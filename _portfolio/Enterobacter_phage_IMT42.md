@@ -5,7 +5,7 @@ excerpt: "*Enterobacter cloacae* — Siphovirus"
 collection: portfolio
 header:
   teaser: "/images/75_8_ua-0007.png"
-order_number: 6
+order_number: "42"
 host_group: "Enterobacter"
 ---
 
@@ -24,4 +24,3 @@ This isolate was characterized using Transmission Electron Microscopy (TEM), rev
 
 ![TEM Micrograph of Enterobacter phage IMT42](/images/75_8_ua-0007.png)
 
----

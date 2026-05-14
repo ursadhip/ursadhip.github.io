@@ -5,7 +5,7 @@ excerpt: "*Klebsiella pneumoniae* — Podovirus"
 collection: portfolio
 header:
   teaser: "/images/Kp_21_6-0002.png"
-order_number: 3
+order_number: "13"
 host_group: "K"
 ---
 
@@ -24,4 +24,3 @@ This isolate was characterized using Transmission Electron Microscopy (TEM), rev
 
 ![TEM Micrograph of Klebsiella phage IMT13](/images/Kp_21_6-0002.png)
 
----

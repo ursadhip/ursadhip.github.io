@@ -153,7 +153,8 @@ author_profile: true
 
 <div class="entries-grid">
     
-    {% assign sorted_phages = site.portfolio | sort: "order_number" %}
+    {% assign valid_phages = site.portfolio | where_exp: "item", "item.order_number" %}
+    {% assign sorted_phages = valid_phages | sort: "order_number" %}
     {% for post in sorted_phages %}
     {% assign filter_class = post.host_group %}
     

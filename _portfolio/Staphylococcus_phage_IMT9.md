@@ -6,7 +6,7 @@ excerpt: "*Staphyloccus aureus* — Myovirus"
 collection: portfolio
 header:
   teaser: "/images/Sa-17-7-0007.png"
-order_number: 09
+order_number: "09"
 host_group: "S"
 ---
 
@@ -25,4 +25,3 @@ This isolate was characterized using Transmission Electron Microscopy (TEM), rev
 
 ![TEM Micrograph of Staphylococcus phage IMT9](/images/Sa-17-7-0007.png)
 
----

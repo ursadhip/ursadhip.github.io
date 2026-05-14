@@ -5,7 +5,7 @@ excerpt: "*Acinetobacter baumannii* — Myovirus"
 collection: portfolio
 header:
   teaser: "/images/41_11_A5_AA_5F-0005.png"
-order_number: 4
+order_number: "22"
 host_group: "A"
 ---
 
@@ -24,4 +24,3 @@ This isolate was characterized using Transmission Electron Microscopy (TEM), rev
 
 ![TEM Micrograph of Acinetobacter phage IMT22](/images/41_11_A5_AA_5F-0005.png)
 
----

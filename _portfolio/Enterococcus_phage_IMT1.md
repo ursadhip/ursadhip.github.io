@@ -5,7 +5,7 @@ excerpt: "*Enterococcus faecium* — Siphovirus"
 collection: portfolio
 header:
   teaser: "/images/EF1-0003.png"
-order_number: 1
+order_number: "01"
 host_group: "E"
 ---
 
@@ -24,4 +24,3 @@ This isolate was characterized using Transmission Electron Microscopy (TEM), rev
 
 ![TEM Micrograph of Enterococcus phage IMT1](/images/EF1-0003.png)
 
----

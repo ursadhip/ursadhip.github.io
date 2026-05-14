@@ -5,7 +5,7 @@ excerpt: "*Pseudomonas aeruginosa* — Microvirus"
 collection: portfolio
 header:
   teaser: "/images/Pa-48-11-0006.png"
-order_number: 5
+order_number: "39"
 host_group: "P"
 ---
 
@@ -24,4 +24,3 @@ This isolate was characterized using Transmission Electron Microscopy (TEM), rev
 
 ![TEM Micrograph of Pseudomonas phage IMT39](/images/Pa-48-11-0006.png)
 
----

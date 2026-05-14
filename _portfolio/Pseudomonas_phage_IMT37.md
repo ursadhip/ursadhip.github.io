@@ -5,7 +5,7 @@ excerpt: "*Pseudomonas aeruginosa* — Siphovirus"
 collection: portfolio
 header:
   teaser: "/images/Pa_48_8_ua-0011.png"
-order_number: 5
+order_number: "37"
 host_group: "P"
 ---
 
@@ -24,4 +24,3 @@ This isolate was characterized using Transmission Electron Microscopy (TEM), rev
 
 ![TEM Micrograph of Pseudomonas phage IMT37](/images/Pa_48_8_ua-0011.png)
 
----

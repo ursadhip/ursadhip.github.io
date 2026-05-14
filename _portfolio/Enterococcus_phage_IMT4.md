@@ -5,7 +5,7 @@ excerpt: "*Enterococcus faecium* — Myovirus"
 collection: portfolio
 header:
   teaser: "/images/EF4-0003.png"
-order_number: 1
+order_number: "04"
 host_group: "E"
 ---
 
@@ -24,4 +24,3 @@ This isolate was characterized using Transmission Electron Microscopy (TEM), rev
 
 ![TEM Micrograph of Enterococcus phage IMT4](/images/EF4-0003.png)
 
----
