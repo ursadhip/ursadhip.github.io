@@ -156,7 +156,7 @@ author_profile: true
   {% for post in sorted_phages %}
     {% assign filter_class = post.host_group %}
     
-    <div class="phage-card filter-item {% if post.title contains "Acinetobacter" %}abaumannii{% elsif post.title contains "Staphylococcus" %}saureus{% elsif post.title contains "Klebsiella" %}kpneumoniae{% elsif post.title contains "Enterococcus" %}efaecium{% elsif post.title contains "Pseudomonas" %}paeruginosa{% elsif post.title contains "Enterobacter" %}Enterobacter{% else %}{{ post.category }}{% endif %}">
+    <div class="phage-card filter-item {{ post.category }}">
       <div class="image-container">
         <a href="{{ post.url | relative_url }}">
           <img src="/images/{{ post.header.teaser | split: '/' | last }}" alt="{{ post.title }}">
@@ -173,14 +173,16 @@ author_profile: true
 </div>
 
 <script>
-function filterPhage(group, btn) {
-  var cards = document.getElementsByClassName("phage-card");
-  var buttons = document.getElementsByClassName("filter-btn");
-
-  // 1. Update Button States
-  for (var i = 0; i < buttons.length; i++) {
-    buttons[i].classList.remove("active");
-  }
+function filterPhage(group) {
+  const cards = document.querySelectorAll(".phage-card");
+  cards.forEach(card => {
+    if (group === "all" || card.classList.contains(group)) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+}
   btn.classList.add("active");
 
   // 2. Filter Cards
