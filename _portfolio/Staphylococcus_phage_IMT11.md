@@ -1,5 +1,5 @@
 ---
-category: S. aureus
+category: saureus
 title: "Staphylococcus phage IMT11"
 excerpt: "*Staphyloccus aureus* — Myovirus"
 collection: portfolio

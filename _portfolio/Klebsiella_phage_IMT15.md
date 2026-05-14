@@ -1,5 +1,5 @@
 ---
-category: K. pneumoniae
+category: kpneumoniae
 title: "Klebsiella phage IMT15"
 excerpt: "*Klebsiella pneumoniae* — Podovirus"
 collection: portfolio

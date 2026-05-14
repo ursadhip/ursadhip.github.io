@@ -1,5 +1,5 @@
 ---
-category: E. faecium
+category: efaecium
 title: "Enterococcus phage IMT4"
 excerpt: "*Enterococcus faecium* — Myovirus"
 collection: portfolio

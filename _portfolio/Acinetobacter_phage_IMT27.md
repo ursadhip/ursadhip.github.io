@@ -1,5 +1,5 @@
 ---
-category: A. baumannii
+category: abaumannii
 title: "Acinetobacter phage IMT27"
 excerpt: "*Acinetobacter baumannii* — Myovirus"
 collection: portfolio

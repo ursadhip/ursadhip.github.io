@@ -1,5 +1,5 @@
 ---
-category: E. faecium
+category: efaecium
 title: "Enterococcus phage IMT1"
 excerpt: "*Enterococcus faecium* — Siphovirus"
 collection: portfolio
