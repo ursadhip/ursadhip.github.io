@@ -174,17 +174,26 @@ author_profile: true
 
 <script>
 function filterPhage(group, btn) {
-  // Update button active states
-  const buttons = document.querySelectorAll('.filter-btn');
-  buttons.forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
+  var cards = document.getElementsByClassName("phage-card");
+  var buttons = document.getElementsByClassName("filter-btn");
 
-  // Filter items
-  const items = document.querySelectorAll('.filter-item');
-  items.forEach(item => {
-    if (group === 'all') {
-      item.style.display = 'flex';
-    } else if (item.classList.contains(group)) {
+  // 1. Update Button States
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].classList.remove("active");
+  }
+  btn.classList.add("active");
+
+  // 2. Filter Cards
+  for (var j = 0; j < cards.length; j++) {
+    if (group === "all") {
+      cards[j].style.display = "block";
+    } else if (cards[j].classList.contains(group)) {
+      cards[j].style.display = "block";
+    } else {
+      cards[j].style.display = "none";
+    }
+  }
+}
       item.style.display = 'flex';
     } else {
       item.style.display = 'none';
