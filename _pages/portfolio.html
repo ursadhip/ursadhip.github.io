@@ -1,14 +1,194 @@
 ---
 layout: archive
-title: "Portfolio"
+title: ""
 permalink: /portfolio/
 author_profile: true
 ---
 
 {% include base_path %}
 
+<style>
+  /* 1. Scientific Description & Instruction Box */
+  .atlas-description {
+    font-size: 1.05rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 25px;
+  }
 
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
-{% endfor %}
+  .filter-instruction {
+    background: #f1f8ff;
+    border-left: 4px solid #4183c4;
+    padding: 15px;
+    margin: 25px 0;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    color: #24292e;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
 
+  .filter-instruction strong {
+    color: #0366d6;
+  }
+
+  /* 2. Enhanced Filter Buttons */
+  .filter-controls {
+    text-align: center;
+    margin-bottom: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .filter-btn {
+    padding: 10px 22px;
+    border: 2px solid #e1e4e8;
+    background: #fff;
+    color: #586069;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.25s ease-in-out;
+  }
+
+  .filter-btn:hover {
+    border-color: #4183c4;
+    color: #4183c4;
+    background: #f6f8fa;
+  }
+
+  .filter-btn.active {
+    background: #4183c4;
+    border-color: #4183c4;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(65, 131, 196, 0.35);
+  }
+
+  /* 3. Professional Uniform Grid */
+  .entries-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+  }
+
+  .phage-card {
+    border: 1px solid #e1e4e8;
+    border-radius: 10px;
+    background: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+
+  .phage-card:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.08);
+    transform: translateY(-5px);
+  }
+
+  .image-container {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    background: #1a1a1a; /* Darker contrast for TEM micrographs */
+  }
+
+  .phage-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+
+  .phage-card:hover img {
+    transform: scale(1.05);
+  }
+
+  .card-content {
+    padding: 18px;
+    flex-grow: 1;
+    border-top: 3px solid #f6f8fa;
+  }
+
+  .phage-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.15rem;
+    color: #0366d6;
+  }
+
+  .phage-card-excerpt {
+    font-size: 0.9rem;
+    color: #444;
+    line-height: 1.4;
+  }
+</style>
+
+<div style="margin-top: 10px;">
+  <h2 style="font-size: 1.55em; margin-bottom: 8px; color: #222; border-bottom: none;">
+    Bacteriophages against ESKAPE pathogens
+  </h2>
+  <div class="atlas-description">
+    Transmission Electron Microscopy (TEM) reveals diverse Virion Morphologies of Bacteriophages targeting ESKAPE pathogens.
+  </div>
+</div>
+
+<div class="filter-instruction">
+  Use the filters below to browse the collection by host pathogen. Click on any tile to view detailed morphological measurements.
+</div>
+
+<div class="filter-controls">
+  <button class="filter-btn active" onclick="filterPhage('all', this)">All</button>
+  <button class="filter-btn" onclick="filterPhage('E', this)">E. faecium</button>
+  <button class="filter-btn" onclick="filterPhage('S', this)">S. aureus</button>
+  <button class="filter-btn" onclick="filterPhage('K', this)">K. pneumoniae</button>
+  <button class="filter-btn" onclick="filterPhage('A', this)">A. baumannii</button>
+  <button class="filter-btn" onclick="filterPhage('P', this)">P. aeruginosa</button>
+  <button class="filter-btn" onclick="filterPhage('Enterobacter', this)">Enterobacter</button>
+</div>
+
+<div class="entries-grid">
+  {% assign sorted_phages = site.portfolio | sort: "order_number" %}
+  {% for post in sorted_phages %}
+    {% assign filter_class = post.host_group %}
+    
+    <div class="phage-card filter-item {{ filter_class }}">
+      <div class="image-container">
+        <a href="{{ post.url | relative_url }}">
+          <img src="/images/{{ post.header.teaser | split: '/' | last }}" alt="{{ post.title }}">
+        </a>
+      </div>
+      <div class="card-content">
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <div class="phage-card-excerpt">
+          {{ post.excerpt | markdownify }}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<script>
+function filterPhage(group, btn) {
+  // Update button active states
+  const buttons = document.querySelectorAll('.filter-btn');
+  buttons.forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+
+  // Filter items
+  const items = document.querySelectorAll('.filter-item');
+  items.forEach(item => {
+    if (group === 'all') {
+      item.style.display = 'flex';
+    } else if (item.classList.contains(group)) {
+      item.style.display = 'flex';
+    } else {
+      item.style.display = 'none';
+    }
+  });
+}
+</script>

@@ -1,0 +1,26 @@
+---
+title: "Klebsiella phage IMT14"
+excerpt: "*Klebsiella pneumoniae* — Podovirus"
+collection: portfolio
+header:
+  teaser: "/images/Kp_21_7-0015.png"
+order_number: 3
+host_group: "K"
+---
+
+### Morphological Characterization
+
+This isolate was characterized using Transmission Electron Microscopy (TEM), revealing the following structural features:
+
+| Feature | Description |
+| :--- | :--- |
+| **Host Bacterium** | *Klebsiella pneumoniae* |
+| **Morphotype** | Podovirus |
+| **Head Morphology** | Isometric head |
+| **Head Diameter** | 60.87 ± 2.46 nm |
+| **Tail Morphology** | Short, non-contractile tail |
+| **Tail Length** | 12.26 ± 0.73 nm |
+
+![TEM Micrograph of Klebsiella phage IMT14](/images/Kp_21_7-0015.png)
+
+---
