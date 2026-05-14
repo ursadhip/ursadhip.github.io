@@ -156,7 +156,7 @@ author_profile: true
   {% for post in sorted_phages %}
     {% assign filter_class = post.host_group %}
     
-    <div class="phage-card filter-item {% if post.title contains 'Acinetobacter' %}abaumannii{% elif post.title contains 'Staphylococcus' %}saureus{% elif post.title contains 'Klebsiella' %}kpneumoniae{% elif post.title contains 'Enterococcus' %}efaecium{% elif post.title contains 'Pseudomonas' %}paeruginosa{% elif post.title contains 'Enterobacter' %}Enterobacter{% else %}{{ post.category }}{% endif %}">
+    <div class="phage-card filter-item {% if post.title contains "Acinetobacter" %}abaumannii{% elsif post.title contains "Staphylococcus" %}saureus{% elsif post.title contains "Klebsiella" %}kpneumoniae{% elsif post.title contains "Enterococcus" %}efaecium{% elsif post.title contains "Pseudomonas" %}paeruginosa{% elsif post.title contains "Enterobacter" %}Enterobacter{% else %}{{ post.category }}{% endif %}">
       <div class="image-container">
         <a href="{{ post.url | relative_url }}">
           <img src="/images/{{ post.header.teaser | split: '/' | last }}" alt="{{ post.title }}">
