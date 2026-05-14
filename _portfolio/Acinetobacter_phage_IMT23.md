@@ -2,7 +2,7 @@
 title: "Acinetobacter phage IMT23"
 excerpt: "*Acinetobacter baumannii* — Myovirus"
 collection: portfolio
-category: Acinetobacter
+category: A. baumannii
 header:
   teaser: "/images/41_12_A6_AA_5F-0012.png"
 order_number: 4

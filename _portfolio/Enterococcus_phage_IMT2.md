@@ -2,7 +2,7 @@
 title: "Enterococcus phage IMT2"
 excerpt: "*Enterococcus faecium* — Myovirus"
 collection: portfolio
-category: Enterococcus
+category: E. faecium
 header:
   teaser: "/images/EF2-0006.png"
 order_number: 1

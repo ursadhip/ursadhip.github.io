@@ -2,7 +2,7 @@
 title: "Enterococcus phage IMT1"
 excerpt: "*Enterococcus faecium* — Siphovirus"
 collection: portfolio
-category: Enterococcus
+category: E. faecium
 header:
   teaser: "/images/EF1-0003.png"
 order_number: 1
