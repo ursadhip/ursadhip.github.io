@@ -9,15 +9,13 @@ header:
 order_number: 2
 host_group: "S"
 ---
-weight: 5
 
 ### Morphological Characterization
 
 This isolate was characterized using Transmission Electron Microscopy (TEM), revealing the following structural features:
 
 | Feature | Description |
-| :---
-weight: 5 | :--- |
+| :--- | :--- |
 | **Host Bacterium** | *Staphyloccus aureus* |
 | **Morphotype** | Myovirus |
 | **Head Morphology** | Isometric head |
@@ -28,4 +26,3 @@ weight: 5 | :--- |
 ![TEM Micrograph of Staphylococcus phage IMT5](/images/SA15-9-0002.png)
 
 ---
-weight: 5

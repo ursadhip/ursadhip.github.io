@@ -1,5 +1,5 @@
 ---
-category: Enterobacter
+category: enterobacter
 title: "Enterobacter phage IMT41"
 excerpt: "*Enterobacter cloacae* — Siphovirus"
 collection: portfolio
