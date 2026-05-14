@@ -1,4 +1,5 @@
 ---
+weight: 9
 category: saureus
 title: "Staphylococcus phage IMT9"
 excerpt: "*Staphyloccus aureus* — Myovirus"
@@ -8,13 +9,15 @@ header:
 order_number: 2
 host_group: "S"
 ---
+weight: 9
 
 ### Morphological Characterization
 
 This isolate was characterized using Transmission Electron Microscopy (TEM), revealing the following structural features:
 
 | Feature | Description |
-| :--- | :--- |
+| :---
+weight: 9 | :--- |
 | **Host Bacterium** | *Staphyloccus aureus* |
 | **Morphotype** | Myovirus |
 | **Head Morphology** | Isometric head |
@@ -25,3 +28,4 @@ This isolate was characterized using Transmission Electron Microscopy (TEM), rev
 ![TEM Micrograph of Staphylococcus phage IMT9](/images/Sa-17-7-0007.png)
 
 ---
+weight: 9
