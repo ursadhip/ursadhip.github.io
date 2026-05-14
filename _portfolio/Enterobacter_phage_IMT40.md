@@ -2,6 +2,7 @@
 title: "Enterobacter phage IMT40"
 excerpt: "*Enterobacter cloacae* — Siphovirus"
 collection: portfolio
+category: Enterobacter
 header:
   teaser: "/images/75_6_ua-0001.png"
 order_number: 6

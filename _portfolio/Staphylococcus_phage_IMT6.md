@@ -2,6 +2,7 @@
 title: "Staphylococcus phage IMT6"
 excerpt: "*Staphyloccus aureus* — Myovirus"
 collection: portfolio
+category: Staphylococcus
 header:
   teaser: "/images/SA15-10-0004.png"
 order_number: 2

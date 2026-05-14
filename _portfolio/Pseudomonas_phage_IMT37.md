@@ -2,6 +2,7 @@
 title: "Pseudomonas phage IMT37"
 excerpt: "*Pseudomonas aeruginosa* — Siphovirus"
 collection: portfolio
+category: Pseudomonas
 header:
   teaser: "/images/Pa_48_8_ua-0011.png"
 order_number: 5

@@ -2,6 +2,7 @@
 title: "Pseudomonas phage IMT39"
 excerpt: "*Pseudomonas aeruginosa* — Microvirus"
 collection: portfolio
+category: Pseudomonas
 header:
   teaser: "/images/Pa-48-11-0006.png"
 order_number: 5
