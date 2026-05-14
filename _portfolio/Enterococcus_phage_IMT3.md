@@ -6,7 +6,7 @@ collection: portfolio
 header:
   teaser: "/images/EF3-0003.png"
 order_number: "03"
-host_group: "E"
+host_group: "efaecium"
 ---
 
 ### Morphological Characterization
