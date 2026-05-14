@@ -1,8 +1,8 @@
 ---
+category: P. aeruginosa
 title: "Pseudomonas phage IMT39"
 excerpt: "*Pseudomonas aeruginosa* — Microvirus"
 collection: portfolio
-category: P. aeruginosa
 header:
   teaser: "/images/Pa-48-11-0006.png"
 order_number: 5

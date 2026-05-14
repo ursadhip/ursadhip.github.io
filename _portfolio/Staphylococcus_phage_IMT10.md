@@ -1,8 +1,8 @@
 ---
+category: S. aureus
 title: "Staphylococcus phage IMT10"
 excerpt: "*Staphyloccus aureus* — Myovirus"
 collection: portfolio
-category: S. aureus
 header:
   teaser: "/images/SA-17-8-0007.png"
 order_number: 2

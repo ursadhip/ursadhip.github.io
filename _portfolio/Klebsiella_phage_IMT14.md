@@ -1,8 +1,8 @@
 ---
+category: K. pneumoniae
 title: "Klebsiella phage IMT14"
 excerpt: "*Klebsiella pneumoniae* — Podovirus"
 collection: portfolio
-category: K. pneumoniae
 header:
   teaser: "/images/Kp_21_7-0015.png"
 order_number: 3

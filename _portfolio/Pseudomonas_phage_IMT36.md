@@ -1,8 +1,8 @@
 ---
+category: P. aeruginosa
 title: "Pseudomonas phage IMT36"
 excerpt: "*Pseudomonas aeruginosa* — Siphovirus"
 collection: portfolio
-category: P. aeruginosa
 header:
   teaser: "/images/Pa-48-7-0004.png"
 order_number: 5

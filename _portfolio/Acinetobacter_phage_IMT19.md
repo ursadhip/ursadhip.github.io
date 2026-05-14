@@ -1,8 +1,8 @@
 ---
+category: A. baumannii
 title: "Acinetobacter phage IMT19"
 excerpt: "*Acinetobacter baumannii* — Myovirus"
 collection: portfolio
-category: A. baumannii
 header:
   teaser: "/images/41_8_A2_AA_5F-0006.png"
 order_number: 4

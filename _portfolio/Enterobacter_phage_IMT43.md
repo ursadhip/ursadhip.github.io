@@ -1,8 +1,8 @@
 ---
+category: Enterobacter
 title: "Enterobacter phage IMT43"
 excerpt: "*Enterobacter cloacae* — Siphovirus"
 collection: portfolio
-category: Enterobacter
 header:
   teaser: "/images/75_9_ua-0001.png"
 order_number: 6
