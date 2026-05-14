@@ -175,10 +175,26 @@ author_profile: true
 <script>
 function filterPhage(group) {
   const cards = document.querySelectorAll(".phage-card");
+  const buttons = document.querySelectorAll(".filter-btn");
+
+  // 1. Update Button Highlight
+  buttons.forEach(btn => {
+    btn.classList.remove("active");
+    // Check if this button is the one for the current group
+    if (btn.getAttribute("onclick").includes(group)) {
+      btn.classList.add("active");
+    }
+  });
+
+  // 2. Filter logic
   cards.forEach(card => {
     if (group === "all" || card.classList.contains(group)) {
       card.style.display = "block";
     } else {
+      card.style.display = "none";
+    }
+  });
+} else {
       card.style.display = "none";
     }
   });
